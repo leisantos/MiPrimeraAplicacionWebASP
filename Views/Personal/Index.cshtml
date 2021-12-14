@@ -1,0 +1,70 @@
+@{
+    ViewData["Title"] = "Personal";
+}
+<div class="container mt-5">
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-7">
+            <div class="card p-3 py-4">
+                <div class="text-center"> <img src="~/img/Nefuentes.jpg" width="100" class="rounded-circle"> </div>
+                <div class="text-center mt-3">
+                    <h5 class="mt-2 mb-0">Nehemias Fuentes</h5> <span>Tecnico en Sistemas</span>
+                    <div class="px-4 mt-1">
+                        <p class="fonts">Soy una una persona con grandes sueños y metas.
+                            Me gusta esforzarme por lo que sueño y lucho por ello.
+                            Me gusta dar lo mejor de mí en todo lugar; en mi hogar, trabajo, iglesia,etc.
+                            Me gusta dedicarle tiempo a mis estudios y poder aprender día con día más y más.</p>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h6 class="mb-0">Nombre</h6>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        @Model.nombre
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h6 class="mb-0">Email</h6>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        @Model.correo
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h6 class="mb-0">Celular</h6>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        @Model.celular
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h6 class="mb-0">Direccion</h6>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        @Model.direccion
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h6 class="mb-0">Pais</h6>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        @Model.pais
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
