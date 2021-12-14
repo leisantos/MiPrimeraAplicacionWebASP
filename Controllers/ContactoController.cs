@@ -117,7 +117,6 @@ namespace MiPrimeraAplicacionWebASP.Controllers
             return View(contactos);
         }
 
-        // GET: Contacto/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -135,7 +134,6 @@ namespace MiPrimeraAplicacionWebASP.Controllers
             return View(contactos);
         }
 
-        // POST: Contacto/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

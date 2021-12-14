@@ -20,7 +20,6 @@ namespace MiPrimeraAplicacionWebASP.Controllers
             _context = context;
         }
 
-        // GET: Vehiculo
         public async Task<IActionResult> Index()
         {
             return View(await _context.Vehiculo.ToListAsync());
@@ -52,7 +51,6 @@ namespace MiPrimeraAplicacionWebASP.Controllers
 
         // POST: Vehiculo/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("VehiculoID,marca,modelo,anio,descripcion")] Vehiculo vehiculo)
